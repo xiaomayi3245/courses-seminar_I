@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>學術研究時程指南</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Noto Sans TC", sans-serif;
+      }
+      .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+        padding: 0 1.5rem;
+      }
+      .accordion-item.active .accordion-content {
+        max-height: 2500px; /* Increased max-height for images */
+        padding: 1.5rem 1.5rem;
+      }
+      .accordion-item.active .accordion-button svg {
+        transform: rotate(180deg);
+      }
+      .accordion-button svg {
+        transition: transform 0.3s ease;
+      }
+      .ai-prompt {
+        background-color: #f0f9ff; /* light sky blue */
+        border-left: 4px solid #0ea5e9; /* sky blue */
+        padding: 1rem;
+        border-radius: 0.25rem;
+        margin-top: 1.5rem;
+      }
+      .ai-prompt-title {
+        font-weight: 700;
+        color: #0c4a6e; /* darker sky blue */
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-800">
+    <div class="container mx-auto px-4 py-8 md:py-16">
+      <header class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold text-slate-900">
+          學術研究時程指南
+        </h1>
+        <p class="mt-4 text-lg text-slate-600">
+          從主題訂定到論文完成的完整步驟解析
+        </p>
+      </header>
+
+      <!-- New Process Flow Section -->
+      <section class="my-16">
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-0 max-w-6xl mx-auto px-4"
+        >
+          <!-- Step 1 & Arrow -->
+          <div class="flex flex-col md:flex-row items-center w-full md:flex-1">
+            <div
+              class="flex flex-col items-center text-center w-48 flex-shrink-0"
+            >
+              <div
+                class="w-20 h-20 bg-indigo-600 text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg"
+              >
+                1
+              </div>
+              <p class="mt-3 font-semibold text-slate-800">訂定研究主題</p>
+            </div>
+            <div class="w-full md:flex-1 text-slate-300 mt-4 md:mt-0 px-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 md:h-12 md:w-full mx-auto md:mx-0 transform md:rotate-0 rotate-90"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Step 2 & Arrow -->
+          <div class="flex flex-col md:flex-row items-center w-full md:flex-1">
+            <div
+              class="flex flex-col items-center text-center w-48 flex-shrink-0"
+            >
+              <div
+                class="w-20 h-20 bg-indigo-600 text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg"
+              >
+                2
+              </div>
+              <p class="mt-3 font-semibold text-slate-800">查找與取得文獻</p>
+            </div>
+            <div class="w-full md:flex-1 text-slate-300 mt-4 md:mt-0 px-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 md:h-12 md:w-full mx-auto md:mx-0 transform md:rotate-0 rotate-90"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Step 3 & Arrow -->
+          <div class="flex flex-col md:flex-row items-center w-full md:flex-1">
+            <div
+              class="flex flex-col items-center text-center w-48 flex-shrink-0"
+            >
+              <div
+                class="w-20 h-20 bg-indigo-600 text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg"
+              >
+                3
+              </div>
+              <p class="mt-3 font-semibold text-slate-800">分析歸納進行研究</p>
+            </div>
+            <div class="w-full md:flex-1 text-slate-300 mt-4 md:mt-0 px-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 md:h-12 md:w-full mx-auto md:mx-0 transform md:rotate-0 rotate-90"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Step 4 (No Arrow) -->
+          <div
+            class="flex flex-col items-center text-center w-48 flex-shrink-0"
+          >
+            <div
+              class="w-20 h-20 bg-indigo-600 text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg"
+            >
+              4
+            </div>
+            <p class="mt-3 font-semibold text-slate-800">撰寫論文引用文獻</p>
+          </div>
+        </div>
+      </section>
+
+      <main class="max-w-4xl mx-auto">
+        <div id="accordion-container" class="space-y-4">
+          <!-- Accordion Item 1 -->
+          <div
+            class="accordion-item bg-white rounded-xl shadow-md overflow-hidden border border-slate-200"
+          >
+            <button
+              class="accordion-button w-full flex justify-between items-center text-left p-6 hover:bg-slate-100 focus:outline-none"
+            >
+              <div class="flex items-center">
+                <span class="text-2xl font-bold text-indigo-600 mr-4">1</span>
+                <h2 class="text-xl font-bold">訂定研究主題</h2>
+              </div>
+              <svg
+                class="w-6 h-6 text-slate-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div class="accordion-content">
+              <div class="prose max-w-none">
+                <p class="text-base text-slate-700">
+                  這是研究的起點，決定了整個研究的方向與範疇。一個好的研究主題應具備創新性、可行性與研究價值。
+                </p>
+
+                <h3 class="font-bold mt-6 mb-2 text-slate-900">重要性</h3>
+                <p>
+                  明確的研究主題能確保研究過程聚焦，避免迷失方向。它直接影響後續文獻查找的效率、研究方法的選擇，以及最終論文的深度與貢獻。
+                </p>
+
+                <h3 class="font-bold mt-6 mb-2 text-slate-900">工作項目</h3>
+                <ul class="list-disc list-inside space-y-2">
+                  <li>從個人興趣與課程學習中發掘廣泛領域。</li>
+                  <li>
+                    透過大量閱讀該領域的文獻，了解目前的研究趨勢與尚待解決的問題（Research
+                    Gap）。
+                  </li>
+                  <li>
+                    將廣泛的領域逐步縮小，形成一個具體、可操作的研究問題（Research
+                    Question）。
+                  </li>
+                  <li>與指導老師或同儕討論，評估主題的可行性與價值。</li>
+                </ul>
+
+                <h3 class="font-bold mt-6 mb-2 text-slate-900">網路資源</h3>
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4"
+                >
+                  <!-- Resource Card 1 -->
+                  <div class="border rounded-lg p-3 bg-slate-50 flex flex-col">
+                    <h4 class="font-semibold text-base">
+                      <a
+                        href="https://scholar.google.com/"
+                        target="_blank"
+                        class="text-indigo-600 hover:underline"
+                        >Google Scholar (谷歌學術)</a
+                      >
+                    </h4>
+                    <p class="text-sm text-slate-600 mt-1 flex-grow">
+                      快速查找各學科的學術文獻。
+                    </p>
+                    <img
+                      src="google.png"
+                      alt="Google Scholar 網站截圖"
+                      class="mt-3 rounded-md shadow-sm border border-slate-200 w-full object-cover"
+                    />
+                  </div>
+                  <!-- Resource Card 2 -->
+                  <div class="border rounded-lg p-3 bg-slate-50 flex flex-col">
+                    <h4 class="font-semibold text-base">
+                      <a
+                        href="https://www.researchgate.net/"
+                        target="_blank"
+                        class="text-indigo-600 hover:underline"
+                        >ResearchGate</a
+                      >
+                    </h4>
+                    <p class="text-sm text-slate-600 mt-1 flex-grow">
+                      學者社群平台，可發現最新研究趨勢。
+                    </p>
+                    <img
+                      src="researchgate.png"
+                      alt="ResearchGate 網站截圖"
+                      class="mt-3 rounded-md shadow-sm border border-slate-200 w-full object-cover"
+                    />
+                  </div>
+                  <!-- Resource Card 3 -->
+                  <div class="border rounded-lg p-3 bg-slate-50 flex flex-col">
+                    <h4 class="font-semibold text-base">
+                      <a
+                        href="https://www.airitilibrary.com/"
+                        target="_blank"
+                        class="text-indigo-600 hover:underline"
+                        >華藝線上圖書館</a
+                      >
+                    </h4>
+                    <p class="text-sm text-slate-600 mt-1 flex-grow">
+                      台灣最完整的學術資源資料庫之一。
+                    </p>
+                    <img
+                      src="airiti.png"
+                      alt="華藝線上圖書館 網站截圖"
+                      class="mt-3 rounded-md shadow-sm border border-slate-200 w-full object-cover"
+                    />
+                  </div>
+                  <!-- Resource Card 4 -->
+                  <div class="border rounded-lg p-3 bg-slate-50 flex flex-col">
+                    <h4 class="font-semibold text-base">
+                      <a
+                        href="https://data.gov.tw/"
+                        target="_blank"
+                        class="text-indigo-600 hover:underline"
+                        >政府資料開放平臺</a
+                      >
+                    </h4>
+                    <p class="text-sm text-slate-600 mt-1 flex-grow">
+                      提供由政府單位發布的各類公開資料集。
+                    </p>
+                    <img
+                      src="opendata.png"
+                      alt="政府資料開放平臺 網站截圖"
+                      class="mt-3 rounded-md shadow-sm border border-slate-200 w-full object-cover"
+                    />
+                  </div>
+                  <!-- Resource Card 5 -->
+                  <div class="border rounded-lg p-3 bg-slate-50 flex flex-col">
+                    <h4 class="font-semibold text-base">
+                      <a
+                        href="https://www.ncl.edu.tw/"
+                        target="_blank"
+                        class="text-indigo-600 hover:underline"
+                        >國家圖書館</a
+                      >
+                    </h4>
+                    <p class="text-sm text-slate-600 mt-1 flex-grow">
+                      台灣的國家級圖書館，館藏豐富的學術資源。
+                    </p>
+                    <img
+                      src="nlib.png"
+                      alt="國家圖書館 網站截圖"
+                      class="mt-3 rounded-md shadow-sm border border-slate-200 w-full object-cover"
+                    />
+                  </div>
+                  <!-- Resource Card 6 -->
+                  <div class="border rounded-lg p-3 bg-slate-50 flex flex-col">
+                    <h4 class="font-semibold text-base">
+                      <a
+                        href="https://ndltd.ncl.edu.tw/"
+                        target="_blank"
+                        class="text-indigo-600 hover:underline"
+                        >臺灣博碩士論文知識加值系統</a
+                      >
+                    </h4>
+                    <p class="text-sm text-slate-600 mt-1 flex-grow">
+                      查詢台灣各大學的學位論文。
+                    </p>
+                    <img
+                      src="drmaster.png"
+                      alt="臺灣博碩士論文知識加值系統 網站截圖"
+                      class="mt-3 rounded-md shadow-sm border border-slate-200 w-full object-cover"
+                    />
+                  </div>
+                </div>
+
+                <div class="ai-prompt">
+                  <p class="ai-prompt-title">AI 協助提示詞 (Prompt)</p>
+                  <ul
+                    class="list-disc list-inside mt-2 space-y-1 text-slate-700"
+                  >
+                    <li>
+                      "針對「[你的興趣領域]」，提供 10 個潛在的研究主題。"
+                    </li>
+                    <li>
+                      "幫我將「[一個廣泛的主題]」這個主題，縮小為三個具體的研究問題。"
+                    </li>
+                    <li>
+                      "分析這個研究主題的創新性與可行性：「[你的研究主題]」。"
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 2 -->
+          <div
+            class="accordion-item bg-white rounded-xl shadow-md overflow-hidden border border-slate-200"
+          >
+            <button
+              class="accordion-button w-full flex justify-between items-center text-left p-6 hover:bg-slate-100 focus:outline-none"
+            >
+              <div class="flex items-center">
+                <span class="text-2xl font-bold text-indigo-600 mr-4">2</span>
+                <h2 class="text-xl font-bold">查找與取得文獻</h2>
+              </div>
+              <svg
+                class="w-6 h-6 text-slate-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div class="accordion-content">
+              <div class="prose max-w-none">
+                <p class="text-base text-slate-700">
+                  此階段是系統性地蒐集與研究主題相關的學術資料，建立對該領域的深度理解，也被稱為文獻探討（Literature
+                  Review）。
+                </p>
+
+                <h3 class="font-bold mt-6 mb-2 text-slate-900">重要性</h3>
+                <p>
+                  文獻探討能幫助研究者站在巨人的肩膀上，了解前人研究成果，避免重複研究。同時，它能提供理論基礎、研究方法參考，並進一步確立自己研究的獨特貢獻。
+                </p>
+
+                <h3 class="font-bold mt-6 mb-2 text-slate-900">工作項目</h3>
+                <ul class="list-disc list-inside space-y-2">
+                  <li>根據研究主題，拆解出核心關鍵字（Keywords）。</li>
+                  <li>利用學術資料庫進行系統性搜尋。</li>
+                  <li>篩選與主題高度相關且具代表性的文獻。</li>
+                  <li>
+                    精讀文獻，摘要其重點，並使用書目管理工具（如 Zotero,
+                    EndNote）進行整理。
+                  </li>
+                </ul>
+
+                <h3 class="font-bold mt-6 mb-2 text-slate-900">網路資源</h3>
+                <ul class="list-disc list-inside space-y-2">
+                  <li>
+                    各大學圖書館資料庫入口：如 ProQuest, EBSCO, Scopus, Web of
+                    Science。
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.zotero.org/"
+                      target="_blank"
+                      class="text-indigo-600 hover:underline"
+                      >Zotero</a
+                    >
+                    /
+                    <a
+                      href="https://www.mendeley.com/"
+                      target="_blank"
+                      class="text-indigo-600 hover:underline"
+                      >Mendeley</a
+                    >：免費的書目管理軟體。
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.sciencedirect.com/"
+                      target="_blank"
+                      class="text-indigo-600 hover:underline"
+                      >ScienceDirect</a
+                    >：全球領先的科學、技術和醫學全文資料庫。
+                  </li>
+                </ul>
+
+                <div class="ai-prompt">
+                  <p class="ai-prompt-title">AI 協助提示詞 (Prompt)</p>
+                  <ul
+                    class="list-disc list-inside mt-2 space-y-1 text-slate-700"
+                  >
+                    <li>
+                      "提供與「[你的研究主題]」相關的 10 篇關鍵學術論文。"
+                    </li>
+                    <li>
+                      "針對「[你的研究主題]」，建議一些有效的搜尋關鍵字組合
+                      (包含中英文)。"
+                    </li>
+                    <li>
+                      "總結這篇文章的核心論點、研究方法與主要發現：[貼上論文摘要]。"
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 3 -->
+          <div
+            class="accordion-item bg-white rounded-xl shadow-md overflow-hidden border border-slate-200"
+          >
+            <button
+              class="accordion-button w-full flex justify-between items-center text-left p-6 hover:bg-slate-100 focus:outline-none"
+            >
+              <div class="flex items-center">
+                <span class="text-2xl font-bold text-indigo-600 mr-4">3</span>
+                <h2 class="text-xl font-bold">分析歸納進行研究</h2>
+              </div>
+              <svg
+                class="w-6 h-6 text-slate-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div class="accordion-content">
+              <div class="prose max-w-none">
+                <p class="text-base text-slate-700">
+                  這是研究的核心執行階段。研究者需根據研究設計，收集數據或資料，並進行系統性的分析、歸納與詮釋，以回答研究問題。
+                </p>
+
+                <h3 class="font-bold mt-6 mb-2 text-slate-900">重要性</h3>
+                <p>
+                  此階段是產生新知識、提出新觀點的關鍵。嚴謹的研究過程與客觀的分析，是研究成果是否具有說服力與可信度的基礎。
+                </p>
+
+                <h3 class="font-bold mt-6 mb-2 text-slate-900">工作項目</h3>
+                <ul class="list-disc list-inside space-y-2">
+                  <li>
+                    設計研究方法：決定採用質性研究（如訪談、個案分析）或量化研究（如問卷、實驗）。
+                  </li>
+                  <li>
+                    收集資料：執行訪談、發放問卷、進行實驗或蒐集二手資料。
+                  </li>
+                  <li>
+                    整理與分析資料：將收集到的原始資料進行編碼、統計分析或主題分析。
+                  </li>
+                  <li>
+                    詮釋結果：將分析結果與文獻探討的內容進行對話，提出自己的觀點與發現。
+                  </li>
+                </ul>
+
+                <h3 class="font-bold mt-6 mb-2 text-slate-900">網路資源</h3>
+                <ul class="list-disc list-inside space-y-2">
+                  <li>
+                    <a
+                      href="https://www.surveymonkey.com/"
+                      target="_blank"
+                      class="text-indigo-600 hover:underline"
+                      >SurveyMonkey</a
+                    >
+                    /
+                    <a
+                      href="https://www.google.com/forms/about/"
+                      target="_blank"
+                      class="text-indigo-600 hover:underline"
+                      >Google Forms</a
+                    >：線上問卷設計與發放工具。
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.ibm.com/spss"
+                      target="_blank"
+                      class="text-indigo-600 hover:underline"
+                      >SPSS</a
+                    >
+                    /
+                    <a
+                      href="https://www.r-project.org/"
+                      target="_blank"
+                      class="text-indigo-600 hover:underline"
+                      >R</a
+                    >：專業的統計分析軟體。
+                  </li>
+                </ul>
+
+                <div class="ai-prompt">
+                  <p class="ai-prompt-title">AI 協助提示詞 (Prompt)</p>
+                  <ul
+                    class="list-disc list-inside mt-2 space-y-1 text-slate-700"
+                  >
+                    <li>"比較這兩篇論文的觀點異同：[摘要A] 與 [摘要B]。"</li>
+                    <li>
+                      "根據以下幾點摘要，歸納出目前研究的主要趨勢與缺口：[貼上數個摘要]。"
+                    </li>
+                    <li>
+                      "我正在進行「[你的研究方法]」研究，請提供設計訪談大綱時應注意的事項。"
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 4 -->
+          <div
+            class="accordion-item bg-white rounded-xl shadow-md overflow-hidden border border-slate-200"
+          >
+            <button
+              class="accordion-button w-full flex justify-between items-center text-left p-6 hover:bg-slate-100 focus:outline-none"
+            >
+              <div class="flex items-center">
+                <span class="text-2xl font-bold text-indigo-600 mr-4">4</span>
+                <h2 class="text-xl font-bold">撰寫論文引用文獻</h2>
+              </div>
+              <svg
+                class="w-6 h-6 text-slate-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div class="accordion-content">
+              <div class="prose max-w-none">
+                <p class="text-base text-slate-700">
+                  這是研究成果的最終呈現。將研究過程與發現，以清晰、有邏輯的學術格式撰寫成文，並確保所有引用的文獻都以正確格式標註。
+                </p>
+
+                <h3 class="font-bold mt-6 mb-2 text-slate-900">重要性</h3>
+                <p>
+                  論文寫作是與學術社群溝通的唯一途徑，能讓你的研究成果被看見、被檢驗。正確的引用不僅是學術倫理的表現，也是對他人研究成果的尊重，更能增加論文的可信度。
+                </p>
+
+                <h3 class="font-bold mt-6 mb-2 text-slate-900">工作項目</h3>
+                <ul class="list-disc list-inside space-y-2">
+                  <li>
+                    擬定論文大綱：規劃緒論、文獻探討、研究方法、結果與討論、結論等章節。
+                  </li>
+                  <li>逐章撰寫草稿，確保論述清晰、邏輯連貫。</li>
+                  <li>使用書目管理工具插入文內引用與文末參考書目。</li>
+                  <li>反覆修改、潤飾與校對，確保沒有文法或格式錯誤。</li>
+                  <li>進行抄襲檢測，確保學術誠信。</li>
+                </ul>
+
+                <h3 class="font-bold mt-6 mb-2 text-slate-900">網路資源</h3>
+                <ul class="list-disc list-inside space-y-2">
+                  <li>
+                    <a
+                      href="https://owl.purdue.edu/"
+                      target="_blank"
+                      class="text-indigo-600 hover:underline"
+                      >Purdue Online Writing Lab (OWL)</a
+                    >：提供各種論文格式（APA, MLA）的詳細寫作指南。
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.grammarly.com/"
+                      target="_blank"
+                      class="text-indigo-600 hover:underline"
+                      >Grammarly</a
+                    >：英文文法與寫作風格檢查工具。
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.turnitin.com/"
+                      target="_blank"
+                      class="text-indigo-600 hover:underline"
+                      >Turnitin</a
+                    >：論文原創性比對系統（通常由學校提供）。
+                  </li>
+                </ul>
+
+                <div class="ai-prompt">
+                  <p class="ai-prompt-title">AI 協助提示詞 (Prompt)</p>
+                  <ul
+                    class="list-disc list-inside mt-2 space-y-1 text-slate-700"
+                  >
+                    <li>
+                      "幫我為一篇關於「[你的主題]」的學術論文，草擬一份包含各章節重點的詳細大綱。"
+                    </li>
+                    <li>
+                      "將這段文字改寫得更具學術語氣：「[你的草稿文字]」。"
+                    </li>
+                    <li>
+                      "請根據 APA
+                      第七版格式，為這筆資料產生引文：[作者、年份、文章標題、期刊名稱、卷號、頁數]。"
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="text-center mt-12 text-slate-500">
+        <p>&copy; 2024 學術研究時程指南. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const accordionItems = document.querySelectorAll(".accordion-item");
+
+        accordionItems.forEach((item) => {
+          const button = item.querySelector(".accordion-button");
+          button.addEventListener("click", () => {
+            // Close all other items
+            accordionItems.forEach((otherItem) => {
+              if (
+                otherItem !== item &&
+                otherItem.classList.contains("active")
+              ) {
+                otherItem.classList.remove("active");
+              }
+            });
+
+            // Toggle the clicked item
+            item.classList.toggle("active");
+          });
+        });
+
+        // Open the first item by default
+        if (accordionItems.length > 0) {
+          accordionItems[0].classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>
