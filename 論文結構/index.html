@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>學位論文結構規範</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .page-format {
+            font-size: 0.75rem;
+            padding: 0.125rem 0.5rem;
+            border-radius: 9999px;
+            font-weight: 500;
+        }
+        /* Add margin-bottom to content sections for spacing */
+        .content-section {
+            margin-bottom: 2rem; /* 32px */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+        <header class="text-center mb-10">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900">學位論文結構規範</h1>
+            <p class="text-gray-600 mt-2 max-w-2xl mx-auto">完整的學位論文結構指南，包含所有章節的說明與建議頁碼格式。</p>
+        </header>
+
+        <main class="w-full max-w-4xl mx-auto">
+            <!-- Section 1: Front Matter -->
+            <section id="front-matter" class="content-section bg-white rounded-lg shadow-md p-6 md:p-8">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4 border-l-4 border-blue-500 pl-4">論文前置部分 (Front Matter)</h2>
+                <p class="mb-6 text-gray-600">這部分是論文的門面，提供讀者關於論文的基本資訊。</p>
+                <ul class="space-y-4">
+                    <li class="flex items-center justify-between"><span>1. 封面 (Cover Page)</span> <span class="page-format bg-gray-200 text-gray-700">不標示</span></li>
+                    <li class="flex items-center justify-between"><span>2. 書名頁 (Title Page)</span> <span class="page-format bg-gray-200 text-gray-700">不標示</span></li>
+                    <li class="flex items-center justify-between"><span>3. 學位考試委員會審定書</span> <span class="page-format bg-gray-200 text-gray-700">不標示</span></li>
+                    <li class="flex items-center justify-between"><span>4. 摘要 (Abstract)</span> <span class="page-format bg-green-200 text-green-800">羅馬數字 (i, ii...)</span></li>
+                    <li class="flex items-center justify-between"><span>5. 謝誌 (Acknowledgements)</span> <span class="page-format bg-green-200 text-green-800">羅馬數字</span></li>
+                    <li class="flex items-center justify-between"><span>6. 目錄 (Table of Contents)</span> <span class="page-format bg-green-200 text-green-800">羅馬數字</span></li>
+                    <li class="flex items-center justify-between"><span>7. 圖目錄 (List of Figures)</span> <span class="page-format bg-green-200 text-green-800">羅馬數字</span></li>
+                    <li class="flex items-center justify-between"><span>8. 表目錄 (List of Tables)</span> <span class="page-format bg-green-200 text-green-800">羅馬數字</span></li>
+                </ul>
+            </section>
+
+            <!-- Section 2: Body -->
+            <section id="body" class="content-section bg-white rounded-lg shadow-md p-6 md:p-8">
+                 <h2 class="text-2xl font-bold text-blue-900 mb-4 border-l-4 border-blue-500 pl-4">論文主體部分 (Body)</h2>
+                <p class="mb-6 text-gray-600">這是論文的核心，詳細闡述整個研究的過程與成果。所有主體章節頁碼皆由此開始計算。</p>
+                 <ul class="space-y-4">
+                    <li class="flex items-start justify-between">
+                        <div>
+                            <h3 class="font-semibold">第一章 緒論 (Introduction)</h3>
+                            <ul class="list-disc list-inside text-gray-600 text-sm mt-1 ml-2">
+                                <li>研究背景與動機</li>
+                                <li>研究目的、研究問題</li>
+                                <li>研究範圍與限制、論文架構</li>
+                            </ul>
+                        </div>
+                        <span class="page-format bg-blue-200 text-blue-800 flex-shrink-0 mt-1">阿拉伯數字 (1, 2...)</span>
+                    </li>
+                     <li class="flex items-start justify-between">
+                        <div>
+                            <h3 class="font-semibold">第二章 文獻探討 (Literature Review)</h3>
+                             <ul class="list-disc list-inside text-gray-600 text-sm mt-1 ml-2">
+                                <li>回顧相關理論與研究</li>
+                                <li>評析既有文獻，確立研究利基</li>
+                            </ul>
+                        </div>
+                         <span class="page-format bg-blue-200 text-blue-800 flex-shrink-0 mt-1">阿拉伯數字</span>
+                    </li>
+                     <li class="flex items-start justify-between">
+                        <div>
+                            <h3 class="font-semibold">第三章 研究方法 (Research Methodology)</h3>
+                             <ul class="list-disc list-inside text-gray-600 text-sm mt-1 ml-2">
+                                <li>研究架構、對象、工具</li>
+                                <li>實施程序、資料分析方法</li>
+                            </ul>
+                        </div>
+                         <span class="page-format bg-blue-200 text-blue-800 flex-shrink-0 mt-1">阿拉伯數字</span>
+                    </li>
+                     <li class="flex items-start justify-between">
+                        <div>
+                            <h3 class="font-semibold">第四章 研究結果與分析 (Results and Analysis)</h3>
+                            <ul class="list-disc list-inside text-gray-600 text-sm mt-1 ml-2">
+                                <li>客觀呈現數據</li>
+                                <li>深入分析與詮釋</li>
+                            </ul>
+                        </div>
+                        <span class="page-format bg-blue-200 text-blue-800 flex-shrink-0 mt-1">阿拉伯數字</span>
+                    </li>
+                    <li class="flex items-start justify-between">
+                        <div>
+                            <h3 class="font-semibold">第五章 結論與建議 (Conclusion and Suggestions)</h3>
+                            <ul class="list-disc list-inside text-gray-600 text-sm mt-1 ml-2">
+                                <li>總結研究發現、回應問題</li>
+                                <li>說明研究貢獻與未來建議</li>
+                            </ul>
+                        </div>
+                        <span class="page-format bg-blue-200 text-blue-800 flex-shrink-0 mt-1">阿拉伯數字</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Section 3: Reference Matter -->
+            <section id="reference-matter" class="content-section bg-white rounded-lg shadow-md p-6 md:p-8" style="margin-bottom: 0;">
+                 <h2 class="text-2xl font-bold text-blue-900 mb-4 border-l-4 border-blue-500 pl-4">論文參考部分 (Reference Matter)</h2>
+                <p class="mb-6 text-gray-600">包含所有引用的文獻與補充資料，頁碼接續主體部分。</p>
+                 <ul class="space-y-4">
+                    <li class="flex items-center justify-between">
+                        <span>1. 參考文獻 (References / Bibliography)</span> 
+                        <span class="page-format bg-blue-200 text-blue-800">阿拉伯數字</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                        <span>2. 附錄 (Appendices)</span>
+                        <span class="page-format bg-blue-200 text-blue-800">阿拉伯數字</span>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
+
